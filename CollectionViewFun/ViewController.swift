@@ -28,10 +28,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - Collection View DataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return 1000
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "basicCell", for: indexPath)
         
         cell.backgroundColor = UIColor.getRandomColor()
